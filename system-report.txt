@@ -1,0 +1,30 @@
+System Report
+Wed Oct 14 13:37:47 UTC 2026
+
+Hostname:
+35c4692fcd33
+
+Kernel version:
+6.8.0-1067-azure
+
+Disk usage:
+Filesystem      Size  Used Avail Use% Mounted on
+overlay          96G   39G   57G  41% /
+tmpfs            64M     0   64M   0% /dev
+shm              64M     0   64M   0% /dev/shm
+tmpfs           512M  8.0K  512M   1% /box
+tmpfs           512M     0  512M   0% /tmp
+tmpfs           4.0K     0  4.0K   0% /proc/acpi
+
+Memory usage:
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       1.1Gi       639Mi       8.0Mi        13Gi        14Gi
+Swap:             0B          0B          0B
+
+Top processes:
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root          13  0.0  0.0   3876  2760 ?        Ss   13:37   0:00 bash script.sh
+root          32  0.0  0.0   6460  2464 ?        R    13:37   0:00 ps aux --sort=-%mem
+root          15  0.0  0.0   2328  1396 ?        Ss   13:37   0:00 sh -c while true; do grep ^usage_usec /sys/fs/cgroup/cpu.stat 2>/dev/null; sleep 1; done
+root           1  0.0  0.0   2224  1108 ?        Ss   13:37   0:00 sleep 125
+root          30  0.0  0.0   2224  1096 ?        S    13:37   0:00 sleep 1
